@@ -1,1 +1,3 @@
-# trip_memo_react_with_mongoDB
+# Trip Memo React with MongoDB App
+## Description
+### npm run start
