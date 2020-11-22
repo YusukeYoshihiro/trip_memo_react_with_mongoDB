@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { Link } from "react-router-dom";
 
@@ -16,6 +16,8 @@ class Header extends Component {
     }
 
     render() {
+
+        console.log(this.props)
         return (
 
             <nav>
@@ -25,6 +27,7 @@ class Header extends Component {
                     </Link>
                     <ul className="right">
                         {this.renderContent()}
+                        {/* {this.props.auth === nill ? <div></div> : this.props.auth === false ? <li><a href="/auth/google">Login with Google</a></li> : <li><a href="/api/logout">Logout</a></li>} */}
                     </ul>
                 </div>
             </nav>
@@ -35,5 +38,6 @@ class Header extends Component {
 function mapStateToProps({ auth }) {
     return { auth };
 }
+// console.log(auth);
 
 export default connect(mapStateToProps)(Header);
