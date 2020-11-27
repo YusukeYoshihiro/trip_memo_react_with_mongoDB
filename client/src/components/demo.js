@@ -1,4 +1,4 @@
-// // Reduxフローを実現
+// // // Reduxフローを実現
 // import React, { FC, useReducer, createContext} from 'react';
 // import AppScreen from './AppScreen';
 
