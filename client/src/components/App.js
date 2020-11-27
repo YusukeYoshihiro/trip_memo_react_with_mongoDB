@@ -13,7 +13,9 @@ class App extends Component {
     componentDidMount() {
         this.props.fetchUser();
     }
-
+    
+    // What is "exact" in <Route exact path="/" component={...}/>
+    //  https://qiita.com/gombeedoe/items/6f4ea0e37775bac01c0d
     render() {
         return (
             <div className="container">
@@ -21,7 +23,6 @@ class App extends Component {
                     <div>
                         <Header/>
                         <Switch>
-                            /*
                             <Route exact path="/" component={Landing}/>
                             <Route path="/main" component={Main}/>
                         </Switch>
